@@ -190,10 +190,9 @@ export default function QuizApp() {
             </div>
 
             <div className="space-y-3 max-w-5xl mx-auto">
-              {currentQ.options.map((option, index) => {
+              {currentQ.options.map((option) => {
                 const isSelected = selectedAnswers[currentQuestion] === option
                 const isHovered = hoveredOption === option
-                const isAlternate = index % 2 === 0
 
                 return (
                   <button
@@ -203,16 +202,10 @@ export default function QuizApp() {
                     onMouseLeave={() => setHoveredOption(null)}
                     className={`w-full p-4 md:p-5 rounded-2xl text-sm md:text-base font-semibold transition-all duration-300 border ${
                       isSelected
-                        ? isAlternate
-                          ? "bg-[#C8E3F0] text-[#2C3E50] shadow-md border-[#A0C8E1]"
-                          : "bg-[#E0F0F7] text-[#2C3E50] shadow-md border-[#C8E3F0]"
+                        ? "bg-[#C8E3F0] text-[#2C3E50] shadow-md border-[#A0C8E1]"
                         : isHovered
-                          ? isAlternate
-                            ? "bg-[#D4E8F3] text-[#2C3E50] border-[#B0D4E8]"
-                            : "bg-[#E8F4F8] text-[#2C3E50] border-[#D4E8F3]"
-                          : isAlternate
-                            ? "bg-[#C8E3F0] text-[#2C3E50] border-[#B0D4E8]"
-                            : "bg-[#F5F9FB] text-[#2C3E50] border-[#E0F0F7]"
+                          ? "bg-[#E8F4F8] text-[#2C3E50] border-[#D4E8F3]"
+                          : "bg-white text-[#2C3E50] border-[#D8E4EB]"
                     }`}
                   >
                     {option}
