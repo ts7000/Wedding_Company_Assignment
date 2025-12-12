@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Downloads/frontend-developer-assignment/app"
+		},
+		{
+			"path": "../../Downloads/frontend-developer-assignment/components"
+		},
+		{
+			"path": "../../Downloads/frontend-developer-assignment/hooks"
+		},
+		{
+			"path": "../../Downloads/frontend-developer-assignment/lib"
+		},
+		{
+			"path": "../../Downloads/frontend-developer-assignment/public"
+		},
+		{
+			"path": "../../Downloads/frontend-developer-assignment/styles"
+		}
+	],
+	"settings": {}
+}
